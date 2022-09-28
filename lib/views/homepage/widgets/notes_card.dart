@@ -57,10 +57,13 @@ class NotesCard extends StatelessWidget {
                     ),
                   ),
                   kHeight05,
-                  Text(
-                    notes.description,
-                    style: const TextStyle(
-                      fontSize: 16,
+                  Expanded(
+                    child: Text(
+                      notes.description,
+                      style: const TextStyle(
+                        fontSize: 16,
+                      ),
+                      maxLines: 5,
                     ),
                   )
                 ],
@@ -72,8 +75,6 @@ class NotesCard extends StatelessWidget {
     );
   }
 }
-
-
 
 extension HexColor on Color {
   static Color fromHex(String hexString) {

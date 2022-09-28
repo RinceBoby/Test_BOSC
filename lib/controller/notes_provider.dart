@@ -19,7 +19,7 @@ class NotesProvider extends ChangeNotifier{
 
   //<<<<<Remove_Note>>>>>//
   void removeNote(int index){
-    notes.remove(index);
+    notes.removeAt(index);
     notifyListeners();
   }
 
